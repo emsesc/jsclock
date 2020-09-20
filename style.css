@@ -1,0 +1,123 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+body {
+  background-color: #073d57;
+  background-image: url('rainbow.jpg');
+  height: 200%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#clock {
+  font-family: "Dosis",helvetica,arial,sans-serif;
+  color: #ffffff;
+  font-size: 100px;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 40px;
+}
+
+body {
+      background-color: #EEE;
+    }
+
+    .section {
+      background-color: #FFF0;
+      padding: 20px;
+      width: 550px;
+      border-radius: 5px;
+      margin: 0 auto;
+      margin-top: 30px;
+
+      display: grid;
+      justify-content: center;
+    }
+
+    #analogClock {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+    }
+
+    #analogClock > * {
+      grid-area: 1 / 1;
+    }
+
+    #analogClock .center {
+      width: 10px;
+      height: 10px;
+      background-color: #E83151;
+      border: 5px solid #FFF;
+      border-radius: 50%;
+      position: relative;
+      z-index: 100;
+    }
+
+    #analogClock .second,
+    #analogClock .hour,
+    #analogClock .minute {
+      box-shadow: 0 0 10px rgb(187, 181, 181);
+      position: relative;
+      transform-origin: left;
+      border-radius: 10px;
+    }
+
+    #analogClock .second {
+      height: 0px;
+      width: 140px;
+      border-top: 2px solid #E83151;
+
+      left: 70px;
+      top: 0px;
+
+      transform: rotate(var(--seconds));
+    }
+
+    #analogClock .hour {
+      height: 0px;
+      width: 75px;
+      border-top: 8px solid #FFF;
+
+      left: 40px;
+      top: 0px;
+
+      transform: rotate(var(--hours));
+    }
+
+    #analogClock .minute {
+      height: 0px;
+      width: 140px;
+      border-top: 4px solid #FFF;
+
+      left: 70px;
+      top: 0px;
+
+      transform: rotate(var(--minutes));
+    }
+
+button{ 
+  padding: 10px 40px;  
+  overflow:hidden;
+  font-family: "Dosis",helvetica,arial,sans-serif;
+}
+
+button:before {
+  content:"Hello! Welcome to the clock page. 🤩";
+  background-color: rgb(193, 197, 238);
+  border: 2px solid #FFF;
+  width: 200px;
+  height: 25px;
+  position: absolute;
+  top: 750px;
+  left: -200px;
+  transition: all 300ms ease;
+  margin: auto;
+  text-align: center;
+}
+
+button:hover:before {
+  left: 50px;
+}
